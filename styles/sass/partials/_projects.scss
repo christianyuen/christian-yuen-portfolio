@@ -1,0 +1,21 @@
+@use './variables' as *;
+
+.projectContainer {
+    height: 100vh;
+    background-color: #000000;
+}
+
+.projectsTextContainer {
+    display: flex;
+    justify-content: center;
+    h2 {
+        color: $offWhite;
+        font-size: 3rem;
+        font-weight: 500;
+        border-bottom: solid #cc4c28 5px;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+}

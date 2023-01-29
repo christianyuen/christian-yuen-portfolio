@@ -1,0 +1,36 @@
+@use './variables' as *;
+
+.about {
+    display: flex;
+    height: 75%;
+    width: 100%;
+    background-color: black;
+    padding-top: 30px;
+}
+
+.aboutTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    h2 {
+        color: $offWhite;
+        font-size: 3rem;
+        font-weight: 500;
+        padding-right: 5px;
+        box-shadow: #cc4c28 5px 5px;
+        margin: 0;
+    }
+}
+
+p {
+    color: $offWhite;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-family: $baseFont;
+    margin-bottom: 20px;
+}
+
+

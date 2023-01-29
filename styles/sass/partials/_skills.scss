@@ -1,0 +1,135 @@
+@use './variables' as *;
+
+.skills {
+    height: 100%;
+    // background-color: #07071a;
+     #background-video {
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.skillsTextContainer {
+    display: flex;
+    justify-content: center;
+    h2 {
+        color: $offWhite;
+        font-size: 3rem;
+        font-weight: 500;
+        border-bottom: solid #cc4c28 5px;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 70px;
+    margin-bottom: 35px;
+    position: relative;
+    transition: all ease-in-out 0.5s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    height: auto;
+    width: 60px;
+    filter: invert(100%);
+}
+
+#html {
+    height: auto;
+    width: 55px;
+}
+
+#css {
+    height: auto;
+    width: 55px;
+}
+
+#sass {
+    margin-top: 15px;
+    height: auto;
+    width: 70px;
+}
+
+#react {
+    height: auto;
+    width: 70px;
+}
+
+.office {
+    height: auto;
+    width: 50px;
+}
+
+.photoshop {
+    height: auto;
+    width: 60px;
+}
+
+.procreate {
+    height: auto;
+    width: 70px;
+}
+
+.audio {
+    transform: rotate(270deg);
+    height: auto;
+    width: 60px;
+    filter: invert(100%);
+}
+
+.responsive {
+    height: auto;
+    width: 70px;
+}
+
+.iconName {
+    margin: 0;
+    color: white;
+    font-family: $baseFont;
+    font-size: 0.6rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nameContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    opacity: 0;
+    top: 0;
+    bottom: -13px;
+    right: 0;
+    left: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+.nameContainer:hover {
+    opacity: 100%;
+}
+
+
+
+
+
+
+
+

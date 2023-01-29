@@ -5,19 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Yuen</title>
-    <style>
-        html {
-            background-color: black;
-        }
-
-        h1 {
-            color: white;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size: 80px;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <h1>Site Under Construction... 🚧 🏗️ 🏠</h1>
+    <!-- START HEADER -->
+    <header>
+        <video id="background-video" autoplay loop muted>
+            <source src="./assets/backgroundvideo.mov" type="video/mp4">
+        </video>
+        <div class="headerTextContainer">
+            <h1>Christian Yuen</h1>
+            <h2>nyc based web developer.</h2>
+            <a class="getInTouch" href="">contact me</a>
+            <i aria-hidden="true"><img class="downArrow" src="./assets/down-arrow-32px.png"></i>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START ABOUT  -->
+    <section class="about">
+        <div class="wrapper">
+            <div class="aboutTextContainer">
+                <h2>about</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit cupiditate assumenda perferendis facilis nemo minus vero, animi doloribus deserunt tempora deleniti earum exercitationem voluptate. 
+                    
+                Nisi voluptatem distinctio necessitatibus quis suscipit quo provident veritatis repellendus voluptas quae modi ipsam debitis unde placeat libero dignissimos, ex ad eaque quaerat repellat! Ex totam fugit quae cupiditate, deserunt repudiandae ipsa autem veritatis architecto velit minima corporis voluptatum repellat perspiciatis. 
+                
+                totam praesentium deleniti repellat distinctio in ex temporibus explicabo? Vitae voluptatem porro, voluptates nisi voluptas rem enim.</p>
+            </div>
+            <div class="aboutImageContainer">
+                <img src="" alt="">
+            </div>
+        </div> <!-- END WRAPPER -->
+    </section> 
+    <!-- END ABOUT -->
+
+    <!-- START SKILLS -->
+    <section class="skills">
+        <video id="background-video" autoplay loop muted>
+            <source src="./assets/color-haze-flipped.mov" type="video/mp4">
+        </video>
+
+        <div class="wrapper">
+            <div class="skillsTextContainer">
+                <h2>skills</h2>
+            </div>
+
+            <div class="skillsContainer">
+                <div class="skill">
+                    <img id="html" class="icon" src="./assets/html5.svg" alt="html-5">
+                    <div class="nameContainer">
+                        <span class="iconName">HTML</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img id="css" class="icon" src="./assets/css3-alt.svg" alt="CSS-3">
+                    <div class="nameContainer">
+                        <span class="iconName">CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img id="sass" class="icon" src="./assets/sass.svg" alt="Sass">
+                    <div class="nameContainer">
+                        <span class="iconName">SASS</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="icon" src="./assets/javascript.svg" alt="Javascript">
+                    <div class="nameContainer">
+                        <span class="iconName">Javascript</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img id="react" class="icon" src="./assets/react.svg" alt="React">
+                    <div class="nameContainer">
+                        <span class="iconName">React</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="icon" src="./assets/github.svg" alt="Github/Git">
+                    <div class="nameContainer">
+                        <span class="iconName">Github/Git</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="icon" src="./assets/firebase.svg" alt="Firebase">
+                    <div class="nameContainer">
+                        <span class="iconName">Firebase</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="icon" src="./assets/accessibility.svg" alt="accessibility">
+                    <div class="nameContainer">
+                        <span class="iconName">Accessibility</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="responsive" src="./assets/phone-tablet-and-laptop.png" alt="Responsive Design">
+                    <div class="nameContainer">
+                        <span class="iconName">Mobile Design</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="audio" src="./assets/sliders.svg" alt="Sound Design">
+                    <div class="nameContainer">
+                        <span class="iconName">Audio Mixing</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="office" src="./assets/microsoft office.png" alt="microsoft office">
+                    <div class="nameContainer">
+                        <span class="iconName"> microsoft</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="procreate" src="./assets/procreate.png" alt="Procreate">
+                    <div class="nameContainer">
+                        <span class="iconName">Procreate</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="photoshop" src="./assets/photoshop.png" alt="Photoshop">
+                    <div class="nameContainer">
+                        <span class="iconName">Photoshop</span>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- END WRAPPER -->
+    </section>
+    <!-- END SKILLS -->
+
+    <!-- START PROJECTS -->
+    <section class="projectContainer">
+        <div class="wrapper">
+            <div class="projectsTextContainer">
+                <h2>projects</h2>
+            </div>
+        </div> <!-- END WRAPPER -->
+    </section>
+    <!-- END PROJECTS -->
+
+    <!-- JAVASCRIPT -->
+    <!-- <script src="./script.js"></script> -->
 </body>
 </html>
