@@ -233,7 +233,7 @@ body {
 .wrapper {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 50px;
 }
 
 header {
@@ -265,7 +265,7 @@ header .headerTextContainer {
 #background-video {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: absolute;
   z-index: -1;
@@ -333,51 +333,70 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 75%;
-  width: 100%;
   background-color: black;
   padding-top: 30px;
+}
+
+.aboutImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aboutImageContainer img {
+  width: 200px;
+  border-radius: 100px;
+  margin-top: 30px;
+}
+
+.aboutName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aboutName h2 {
+  color: #f8f4f3;
+  font-size: 3rem;
+  font-weight: 500;
+  border-bottom: solid #cc4c28 5px;
+  margin: 0;
 }
 
 .aboutTextContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 60%;
-}
-.aboutTextContainer h2 {
-  color: #f8f4f3;
-  font-size: 3rem;
-  font-weight: 500;
-  padding-right: 5px;
-  -webkit-box-shadow: #cc4c28 5px 5px;
-          box-shadow: #cc4c28 5px 5px;
-  margin: 0;
 }
 
 p {
   color: #f8f4f3;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 100;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 1px;
   font-family: "Roboto Condensed", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+p span {
+  display: block;
 }
 
 .skills {
-  height: 100%;
+  position: relative;
 }
 .skills #background-video {
   height: 100%;
+  width: 100%;
   z-index: -1;
+  position: absolute;
+  bottom: 0;
+  top: 0;
 }
 
 .skillsTextContainer {
@@ -527,9 +546,9 @@ p {
   opacity: 100%;
 }
 
-.projectContainer {
-  height: 100vh;
+.projects {
   background-color: #000000;
+  padding-bottom: 50px;
 }
 
 .projectsTextContainer {
@@ -546,7 +565,193 @@ p {
   font-weight: 500;
   border-bottom: solid #cc4c28 5px;
   margin-top: 30px;
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   padding: 0;
+}
+
+.projectsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 48%;
+}
+.project img {
+  width: 100%;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.projectHover {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0%;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.project .projectHover:hover,
+.project .projectHover:focus {
+  opacity: 90%;
+}
+
+.projectTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+.projectTextContainer h2 {
+  color: #f8f4f3;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.projectDescription {
+  color: #f8f4f3;
+  font-size: 0.8rem;
+  font-weight: 100;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.projectSkills {
+  font-weight: 500;
+  font-size: 0.7rem;
+  margin: 0;
+  color: #cc4c28;
+}
+
+.enter {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.enter:hover,
+.enter:focus {
+  -webkit-text-decoration: underline #cc4c28 1px;
+          text-decoration: underline #cc4c28 1px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+}
+.contact video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.socials img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 30px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  margin: 0;
+}
+
+.middleIcon {
+  margin: 0 10px;
+}
+
+.socials img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.emailButton {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.emailButton a {
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #f8f4f3;
+  font-size: 1rem;
+  background-color: black;
+  padding: 5px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.emailButton a:hover {
+  -webkit-box-shadow: 0px 3px #cc4c28;
+          box-shadow: 0px 3px #cc4c28;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #000000;
+  padding: 0;
+}
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer div p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
 }

@@ -1,8 +1,8 @@
 @use './variables' as *;
 
-.projectContainer {
-    height: 100vh;
+.projects {
     background-color: #000000;
+    padding-bottom: 50px;
 }
 
 .projectsTextContainer {
@@ -14,8 +14,89 @@
         font-weight: 500;
         border-bottom: solid #cc4c28 5px;
         margin-top: 30px;
-        text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
         padding: 0;
     }
+}
+
+.projectsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.project {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 48%;
+    img {
+        width: 100%;
+        transition: all ease-in-out 0.5s;
+    }
+}
+
+.projectHover {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0%;
+    transition: all  ease-in-out 0.5s;
+}
+
+.project .projectHover:hover, 
+.project .projectHover:focus  {
+            opacity: 90%;
+        }
+
+.projectTextContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    h2 {
+        color: $offWhite;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 0px;
+    }
+}
+
+.projectDescription {
+color: $offWhite;
+font-size: 0.8rem;
+font-weight: 100;
+line-height: 25px;
+letter-spacing: 1px;
+font-family: $baseFont;
+margin-bottom: 0px;
+margin-top: 0px;
+}
+
+.projectSkills {
+    font-weight: 500;
+    font-size: 0.7rem;
+    margin: 0;
+    color: #cc4c28;
+}
+
+.enter {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.enter:hover,
+.enter:focus {
+    text-decoration: underline #cc4c28 1px;
+    transition: all 0.5s ease-in-out;
 }
