@@ -228,6 +228,7 @@ html {
 
 body {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -683,11 +684,12 @@ p span {
       -ms-flex-pack: center;
           justify-content: center;
   height: 300px;
+  position: relative;
 }
 .contact video {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 40%;
+  height: 100%;
   width: 100%;
   position: absolute;
   z-index: -1;
@@ -759,6 +761,22 @@ footer div p {
   font-size: 0.7rem;
 }
 
+@media screen and (max-width: 950px) {
+  .projectDescription {
+    display: none;
+  }
+  .projectTextContainer h2 {
+    font-size: 1.3rem;
+  }
+  .projectSkills {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  .projectSkills {
+    font-size: 0.5rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .projectsContainer {
     -webkit-box-orient: vertical;
@@ -769,17 +787,22 @@ footer div p {
   }
   .project {
     width: 100%;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
   }
-  .projectsTextContainer h2 {
-    font-size: 3rem;
+  .projectTextContainer h2 {
+    font-size: 1.5rem;
     margin-top: 30px;
-    margin-bottom: 10px;
     padding: 0;
+  }
+  .projectSkills {
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 575px) {
+  .projectSkills {
+    font-size: 0.6rem;
+  }
   .projectDescription {
     display: none;
   }
@@ -797,9 +820,7 @@ footer div p {
   .projectDescription {
     display: none;
   }
-  .enter {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .enter:first-of-type {
+    margin-top: 10px;
   }
 }
