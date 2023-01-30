@@ -477,7 +477,7 @@ p span {
 #sass {
   margin-top: 15px;
   height: auto;
-  width: 70px;
+  width: 75px;
 }
 
 #react {
@@ -492,7 +492,7 @@ p span {
 
 .photoshop {
   height: auto;
-  width: 60px;
+  width: 56px;
 }
 
 .procreate {
@@ -504,7 +504,7 @@ p span {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   height: auto;
-  width: 60px;
+  width: 57px;
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
@@ -537,7 +537,7 @@ p span {
           align-items: flex-end;
   opacity: 0;
   top: 0;
-  bottom: -13px;
+  bottom: -14px;
   right: 0;
   left: 0;
   -webkit-transition: all ease-in-out 0.5s;
