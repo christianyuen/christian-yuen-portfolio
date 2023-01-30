@@ -1,1 +1,64 @@
 @use './_variables.scss' as *;
+
+@media screen and (max-width: 768px) {
+// PROJECTS SECTION
+
+    .projectsContainer {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .projectsTextContainer h2 {
+        font-size: 3rem;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .projectSkills {
+        // margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+// PROJECTS SECTION
+
+    .projectTextContainer h2 {
+    // margin-top: 30px;
+    }
+
+    .projectDescription {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+// HEADER SECTION
+    h1 {
+        font-size: 3.3rem;
+    }
+
+// PROJECTS SECTION
+    .projectTextContainer h2 {
+        display: none;
+    }
+
+    .projectSkills {
+        display: none;
+    }
+
+    .projectDescription {
+        display: none;
+    }
+
+    .enter {
+        justify-content: center;
+    }
+}

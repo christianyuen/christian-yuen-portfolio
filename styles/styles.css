@@ -662,6 +662,9 @@ p span {
   transition: all 0.5s ease-in-out;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 .enter:hover,
@@ -754,4 +757,49 @@ footer div p {
   margin: 0;
   padding: 0;
   font-size: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .projectsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .project {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .projectsTextContainer h2 {
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .projectDescription {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3.3rem;
+  }
+  .projectTextContainer h2 {
+    display: none;
+  }
+  .projectSkills {
+    display: none;
+  }
+  .projectDescription {
+    display: none;
+  }
+  .enter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
