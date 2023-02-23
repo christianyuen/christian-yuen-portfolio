@@ -392,6 +392,7 @@ p span {
 
 .skills {
   position: relative;
+  padding-bottom: 30px;
 }
 .skills #background-video {
   height: 100%;
@@ -782,6 +783,9 @@ footer div p {
   }
 }
 @media screen and (max-width: 575px) {
+  .skills {
+    padding-bottom: 0px;
+  }
   .skill {
     margin: 20px 100px 30px 100px;
   }

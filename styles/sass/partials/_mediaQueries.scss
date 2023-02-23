@@ -16,6 +16,10 @@
 
 @media screen and (max-width: 575px) {
 // SKILLS SECTION
+    .skills {
+    padding-bottom: 0px;
+    }
+    
     .skill {
         margin: 20px 100px 30px 100px;
         &:last-of-type {
