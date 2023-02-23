@@ -44,12 +44,12 @@
         font-size: 1rem;
         background-color: black;
         padding: 5px;
-        transition: all ease-in-out 0.5s;
+        transition: all ease-in-out 0.3s;
     }
 }
 
 .emailButton a:hover {
-    box-shadow: 0px 3px #cc4c28;
+    box-shadow: 0px 3px $primaryColor;
     cursor: pointer;
 }
 

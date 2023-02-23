@@ -229,6 +229,7 @@ html {
 body {
   font-size: 62.5%;
   overflow-x: hidden;
+  background-color: black;
 }
 
 .wrapper {
@@ -296,8 +297,8 @@ h2 {
   font-size: 1rem;
   background: black;
   padding: 5px 10px;
-  -webkit-transition: all ease-in-out 0.5s;
-  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .getInTouch:hover,
@@ -445,11 +446,11 @@ p span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 70px;
+  margin: 0 80px;
   margin-bottom: 35px;
   position: relative;
-  -webkit-transition: all ease-in-out 0.5s;
-  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .skill:hover {
@@ -549,11 +550,11 @@ p span {
 }
 
 .projects {
-  background-color: #000000;
-  padding-bottom: 50px;
+  background-color: black;
+  padding-bottom: 40px;
 }
 
-.projectsTextContainer {
+.projectsTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,7 +562,7 @@ p span {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.projectsTextContainer h2 {
+.projectsTitle h2 {
   color: #f8f4f3;
   font-size: 3rem;
   font-weight: 500;
@@ -582,9 +583,6 @@ p span {
 }
 
 .project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -594,11 +592,18 @@ p span {
 }
 .project img {
   width: 100%;
-  -webkit-transition: all ease-in-out 0.5s;
-  transition: all ease-in-out 0.5s;
 }
 
 .projectHover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   width: 100%;
   top: 0;
@@ -610,41 +615,8 @@ p span {
   -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
 }
-
-.project .projectHover:hover,
-.project .projectHover:focus {
+.projectHover:focus, .projectHover:hover {
   opacity: 90%;
-}
-
-.projectTextContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px;
-}
-.projectTextContainer h2 {
-  color: #f8f4f3;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin: 0px;
-}
-
-.projectDescription {
-  color: #f8f4f3;
-  font-size: 0.8rem;
-  font-weight: 100;
-  line-height: 25px;
-  letter-spacing: 1px;
-  font-family: "Roboto Condensed", sans-serif;
-  margin-bottom: 0px;
-  margin-top: 0px;
 }
 
 .projectSkills {
@@ -654,27 +626,59 @@ p span {
   color: #cc4c28;
 }
 
-.enter {
-  display: block;
+.projectName {
+  color: #f8f4f3;
   text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1rem;
-  margin-bottom: 10px;
+  color: #f8f4f3;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.enter:hover,
-.enter:focus {
-  -webkit-text-decoration: underline #cc4c28 1px;
-          text-decoration: underline #cc4c28 1px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+.projectIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.iconDescription {
+  opacity: 0;
+  font-size: 0.8rem;
+  margin: -10px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.enter {
+  color: #f8f4f3;
+  font-size: 4.2rem;
+  margin: 0px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.enter:hover, .enter:focus {
+  color: #cc4c28;
+}
+.enter:hover ~ .iconDescription {
+  opacity: 1;
 }
 
 .contact {
@@ -734,8 +738,8 @@ p span {
   font-size: 1rem;
   background-color: black;
   padding: 5px;
-  -webkit-transition: all ease-in-out 0.5s;
-  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .emailButton a:hover {
@@ -762,22 +766,6 @@ footer div p {
   font-size: 0.7rem;
 }
 
-@media screen and (max-width: 950px) {
-  .projectDescription {
-    display: none;
-  }
-  .projectTextContainer h2 {
-    font-size: 1.3rem;
-  }
-  .projectSkills {
-    font-size: 0.6rem;
-  }
-}
-@media screen and (max-width: 840px) {
-  .projectSkills {
-    font-size: 0.5rem;
-  }
-}
 @media screen and (max-width: 768px) {
   .projectsContainer {
     -webkit-box-orient: vertical;
@@ -791,37 +779,23 @@ footer div p {
     margin-bottom: 25px;
     margin-top: 25px;
   }
-  .projectTextContainer h2 {
-    font-size: 1.5rem;
-    margin-top: 30px;
-    padding: 0;
-  }
-  .projectSkills {
-    font-size: 0.7rem;
-  }
 }
 @media screen and (max-width: 575px) {
-  .projectSkills {
-    font-size: 0.6rem;
+  .skill {
+    margin: 20px 100px 30px 100px;
   }
-  .projectDescription {
-    display: none;
+  .skill:last-of-type {
+    margin-bottom: 80px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 516px) {
   h1 {
     font-size: 3.3rem;
   }
-  .projectTextContainer h2 {
-    display: none;
+  .projects .wrapper {
+    padding: 0;
   }
-  .projectSkills {
-    display: none;
-  }
-  .projectDescription {
-    display: none;
-  }
-  .enter:first-of-type {
-    margin-top: 10px;
+  .project {
+    margin-top: 20px;
   }
 }

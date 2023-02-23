@@ -1,18 +1,18 @@
 @use './variables' as *;
 
 .projects {
-    background-color: #000000;
-    padding-bottom: 50px;
+    background-color: $black;
+    padding-bottom: 40px;
 }
 
-.projectsTextContainer {
+.projectsTitle {
     display: flex;
     justify-content: center;
     h2 {
         color: $offWhite;
         font-size: 3rem;
         font-weight: 500;
-        border-bottom: solid #cc4c28 5px;
+        border-bottom: solid $primaryColor 5px;
         margin-top: 30px;
         margin-bottom: 35px;
         padding: 0;
@@ -26,80 +26,81 @@
 }
 
 .project {
-    display: flex;
     position: relative;
     flex-direction: column;
     width: 48%;
     img {
         width: 100%;
-        transition: all ease-in-out 0.5s;
     }
 }
 
 .projectHover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: black;
+    background-color: $black;
     opacity: 0%;
     transition: all  ease-in-out 0.5s;
-}
-
-.project .projectHover:hover, 
-.project .projectHover:focus  {
-            opacity: 90%;
-        }
-
-.projectTextContainer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    h2 {
-        color: $offWhite;
-        font-size: 1.5rem;
-        font-weight: 400;
-        margin: 0px;
+    &:focus,
+    &:hover {
+        opacity: 90%;
     }
-}
-
-.projectDescription {
-color: $offWhite;
-font-size: 0.8rem;
-font-weight: 100;
-line-height: 25px;
-letter-spacing: 1px;
-font-family: $baseFont;
-margin-bottom: 0px;
-margin-top: 0px;
 }
 
 .projectSkills {
     font-weight: 500;
     font-size: 0.7rem;
     margin: 0;
-    color: #cc4c28;
+    color: $primaryColor;
+}
+
+.projectName {
+    color: $offWhite;
+    text-align: center;
+    color: $offWhite;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.projectIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.iconDescription {
+    opacity: 0;
+    font-size: 0.8rem;
+    margin: -10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .enter {
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    transition: all 0.5s ease-in-out;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: $baseFont;
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.enter:hover,
-.enter:focus {
-    text-decoration: underline #cc4c28 1px;
-    transition: all 0.5s ease-in-out;
+    color: $offWhite;
+    font-size: 4.2rem;
+    margin: 0px 20px;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus {
+        color: $primaryColor;
+    }
+    &:hover ~ .iconDescription {
+        opacity: 1;
+    }
 }
